@@ -21,10 +21,12 @@
 
             <em>Sunday - Monday</em><br>
             CLOSED<br><br>
+
+            <?php include("includes/store-hours.php"); ?>
           </div>
         </div>
 
-        <small>&copy;2017 Tameka J. Alston</small>
+        <small>&copy; <?php echo date("Y");?> <?php echo $companyName; ?></small>
       </div>
       <div class="copyright-info">
         <?php include("../asets/includes/copyright.php");?>
