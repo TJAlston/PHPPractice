@@ -24,7 +24,7 @@ $hours = array(
     'thu' => array('13:00-21:00'),
     'fri' => array('16:00-23:00'),
     'sat' => array('16:00-23:00'),
-    'mon' => array('00:00-00:00')
+    'sun' => array('00:00-00:00')
 );
 
 // Optional: add exceptions (great for holidays etc.)
