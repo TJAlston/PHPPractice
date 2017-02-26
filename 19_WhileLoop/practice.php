@@ -1,8 +1,12 @@
 <?php
-	
-	// Constants
 
-	
+define("TITLE", "While Loops");
+
+	// Custom Variables
+$myName = "Tameka J Alston";
+$lessonNum = 19;
+
+
 	// Custom Variables
 
 
@@ -11,7 +15,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PHP <!-- TITLE --></title>
+		<title>PHP <?php echo TITLE; ?></title>
 		<link href="../assets/styles.css" rel="stylesheet">
 	</head>
 	<body>
@@ -19,29 +23,32 @@
 			<a href="/" title="Back to directory" id="logo">
 				<img src="../assets/img/logo.png" alt="PHP">
 			</a>
-			
-			<h1>Tutorial <!-- LESSON NUMBER -->: <small><!-- TITLE --></small></h1>
+
+			<h1>Tutorial <?php echo $lessonNum; ?> <small><?php echo TITLE; ?></small></h1>
 			<hr>
-			
-			<h2>Your Example</h2>
-			
+
+			<h2><?php echo TITLE; ?></h2>
+
 			<div class="sandbox">
-				
+
 				<?php
-				 
-				    // your code here
-				 
+					$startingNumber = 10;
+				   while ($startingNumber <= 35) {
+						 echo $startingNumber . "<br>";
+						 $startingNumber++;
+					 }
+
 				?>
-				
+
 			</div><!-- end sandbox -->
-			
+
 			<a href="index.php" class="button">Back to the lecture</a>
-			
+
 			<hr>
-			
-			<small>&copy;<!-- YEAR --> - <!-- NAME --></small>
+
+			<small>&copy;<?php echo date("Y"); ?>- <?php echo $myName; ?></small>
 		</div><!-- end wrapper -->
-		
+
 		<div class="copyright-info">
 			<?php include('../assets/includes/copyright.php'); ?>
 		</div><!-- end copyright-info -->

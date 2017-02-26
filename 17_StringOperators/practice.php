@@ -1,8 +1,13 @@
 <?php
-	
-	// Constants
 
-	
+define("TITLE", "String Operators");
+
+	// Custom Variables
+$myName = "Tameka J Alston";
+$lessonNum = 17;
+
+
+
 	// Custom Variables
 
 
@@ -11,7 +16,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PHP <!-- TITLE --></title>
+		<title>PHP <?php echo TITLE; ?></title>
 		<link href="../assets/styles.css" rel="stylesheet">
 	</head>
 	<body>
@@ -19,33 +24,42 @@
 			<a href="/" title="Back to directory" id="logo">
 				<img src="../assets/img/logo.png" alt="PHP">
 			</a>
-			
-			<h1>Tutorial <!-- LESSON NUMBER -->: <small><!-- TITLE --></small></h1>
+
+			<h1>Tutorial <?php echo $lessonNum; ?>: <small><?php echo TITLE; ?></small></h1>
 			<hr>
-			
-			<h2>Your Example</h2>
-			
+
+			<h2><?php echo TITLE; ?></h2>
+
 			<div class="sandbox">
-				
+
 				<h3>Concatenation Operator <code>.</code></h3>
 				<?php
-					// your code here
+					$a = "Can you see";
+					$b = $a . " or are you blind?";
+
+					echo $b;
 				?>
-				
+
 				<h3>Concatenating Assignment Operator <code>.=</code></h3>
 				<?php
 					// your code here
+					$a = "Hey There";
+					$a .= " Sexy Thang";
+
+					echo $a;
+
+
 				?>
-				
+
 			</div><!-- end sandbox -->
-			
+
 			<a href="index.php" class="button">Back to the lecture</a>
-			
+
 			<hr>
-			
-			<small>&copy;<!-- YEAR --> - <!-- NAME --></small>
+
+			<small>&copy;<?php echo date('Y'); ?>- <?php echo $myName; ?></small>
 		</div><!-- end wrapper -->
-		
+
 		<div class="copyright-info">
 			<?php include('../assets/includes/copyright.php'); ?>
 		</div><!-- end copyright-info -->

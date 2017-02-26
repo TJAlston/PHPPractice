@@ -19,7 +19,7 @@
 			-->
 			<?php foreach ($menuItems as $dish => $item) { ?>
 				
-				<li><a href="dish.php?item=<?php echo $dish; ?>"><?php echo $item[title]; ?></a> <sup>$</sup><?php echo $item[price]; ?></li>
+				<li><a href="dish.php?item=<?php echo $dish; ?>"><?php echo $item["title"]; ?></a> <sup>$</sup><?php echo $item["price"]; ?></li>
 			
 			<?php } ?>
 		</ul>

@@ -1,12 +1,12 @@
 <?php
-	
+
 	// Constants
 	define("TITLE", "Do While Loop");
-	
+
 	// Custom Variables
-	$myName	= "Brad Hussey";
+	$myName	= "Tameka J. Alston";
 	$lessonNum	= 22;
-	
+
 ?>
 
 <!DOCTYPE html>
@@ -20,29 +20,34 @@
 			<a href="/" title="Back to directory" id="logo">
 				<img src="../assets/img/logo.png" alt="PHP">
 			</a>
-			
+
 			<h1>Tutorial <?php echo $lessonNum; ?>: <small><?php echo TITLE; ?></small></h1>
 			<hr>
-			
+
 			<h2>Your Example</h2>
-			
+
 			<div class="sandbox">
-				
+
 				<?php
-				 
-				    // your code here
-				 
+					$b = 2;
+
+					do {
+						echo "Even Numbers: $b <br>";
+						$b+=2;
+					}
+					while ($b <= 30);
+
 				?>
-				
+
 			</div><!-- end sandbox -->
-			
+
 			<a href="index.php" class="button">Back to the lecture</a>
-			
+
 			<hr>
-			
+
 			<small>&copy;<?php echo date('Y'); ?> - <?php echo $myName; ?></small>
 		</div><!-- end wrapper -->
-		
+
 		<div class="copyright-info">
 			<?php include('../assets/includes/copyright.php'); ?>
 		</div><!-- end copyright-info -->

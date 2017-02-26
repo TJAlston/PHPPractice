@@ -36,16 +36,16 @@
 <html>
 	<head>
 		<title>PHP <?php echo TITLE; ?></title>
-		<link href="../assets/styles.css" rel="stylesheet">
-		<script type="text/javascript" src="../assets/syntaxhighlighter/scripts/shCore.js"></script>
-		<script type="text/javascript" src="../assets/syntaxhighlighter/scripts/shBrushPhp.js"></script>
-		<link type="text/css" rel="stylesheet" href="../assets/syntaxhighlighter/styles/shCoreDefault.css"/>
+		<link href="/assets/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/assets/syntaxhighlighter/scripts/shCore.js"></script>
+		<script type="text/javascript" src="/assets/syntaxhighlighter/scripts/shBrushPhp.js"></script>
+		<link type="text/css" rel="stylesheet" href="/assets/syntaxhighlighter/styles/shCoreDefault.css"/>
 		<script type="text/javascript">SyntaxHighlighter.all();</script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<a href="/" title="Back to directory" id="logo">
-				<img src="../assets/img/logo.png" alt="PHP">
+				<img src="/assets/img/logo.png" alt="PHP">
 			</a>
 			
 			<h1>Tutorial <?php echo $lesson_num; ?>: <small><?php echo TITLE; ?></small></h1>
@@ -89,10 +89,10 @@ $moustaches = array (
 				<p>You're probably wondering how the heck we display this info on the screen! Well, we first have to reference the parent array <code>$moustaches</code>, then the numerical value of the child array <em>(Handlebar is [0], Salvador Dali [1], etc)</em>, and finally the custom key of the information we want to display <em>(name, creep_factor, etc)</em>. It looks like this:</p>
 
 <pre class="brush: php">
-&lt;?php echo $moustaches[2][name]; ?&gt;
+&lt;?php echo $moustaches[2]["name"]; ?&gt;
 </pre>
 			
-				<p>The above code will display <strong><?php echo $moustaches[2][name]; ?>.</strong></p>
+				<p>The above code will display <strong><?php echo $moustaches[2]["name"]; ?>.</strong></p>
 			
 			</div><!-- end sandbox -->
 			
